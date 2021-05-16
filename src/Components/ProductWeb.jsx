@@ -1,6 +1,9 @@
 import React from "react";
 import Section from "./Section";
 import Paragraf from "./Paragraf";
+import InputText from "./InputText";
+import Input from "./Input";
+import Button from "./Button";
 
 const ProductWeb = () => {
   return (
@@ -12,8 +15,24 @@ const ProductWeb = () => {
 
         <div className="add__form">
           <div className="food__name">
-            <p>Enter product name:</p>
-            <input type="text"></input>
+            <Paragraf className="">Enter product name:</Paragraf>
+            <InputText />
+          </div>
+          <div className="food__calories">
+            <Paragraf className="">Product Calories</Paragraf>
+            <InputText />
+          </div>
+          <div className="food__fat">
+            <Paragraf className="">Fat</Paragraf>
+            <InputText />
+          </div>
+          <div className="food__name">
+            <Paragraf className="">Proteins</Paragraf>
+            <InputText />
+          </div>
+          <div className="food__name">
+            <Paragraf className="">Sugar</Paragraf>
+            <InputText />
           </div>
         </div>
       </div>
