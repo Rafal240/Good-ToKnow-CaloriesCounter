@@ -1,0 +1,11 @@
+.nutrition__list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 5px 5px;
+  margin: 5px;
+  .nutrition__item {
+    padding: 15px 10px;
+    margin: 10px 10px;
+  }
+}

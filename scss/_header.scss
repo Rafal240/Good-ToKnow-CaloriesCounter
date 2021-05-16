@@ -1,0 +1,39 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-top: 50px;
+
+  .header__logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: $font-family;
+    text-transform: uppercase;
+  }
+  .header__navList {
+  }
+  .header__navUl {
+    display: flex;
+    padding: 15px 10px;
+    margin: 5px;
+    font-size: 2rem;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: black;
+    margin: 15px 15px;
+  }
+  .header__element {
+    margin: 25px;
+    color: black;
+    border-bottom: 4px solid transparent;
+    &:hover {
+      content: "";
+      color: $primary-color;
+      border-color:red;
+    }
+  }
+  .title__color {
+    color: red;
+  }
+}

@@ -1,0 +1,32 @@
+.main__container {
+  width: 1352px;
+  margin: 0 auto;
+
+  .main__elements {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    background-color: red;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 5px;
+  }
+ 
+  select {
+    background-color:transparent;
+    color:$primary-color;
+    font-size: .9rem;
+    padding: 2px 5px;
+    border-radius: 20px;
+
+
+}
+}
+

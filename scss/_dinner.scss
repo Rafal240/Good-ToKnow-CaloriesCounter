@@ -1,0 +1,35 @@
+.dinner__wprapper {
+  position: relative;
+  .dinner__title {
+    margin-left: 10px;
+    padding: 2px 5px;
+  }
+
+  .dinner__div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dinner__firstItem {
+    margin: 5px 5px;
+    padding: 5px 8px;
+  }
+  .dinner__secondItem {
+    display: flex;
+
+    .dinner__name {
+      margin: -5px 20px;
+      padding: 5px 11px;
+    }
+  }
+}
+
+.dinner__btn{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1rem;
+  color: red;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}

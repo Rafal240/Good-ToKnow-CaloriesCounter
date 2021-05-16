@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="public/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>Good to know</title>
+</head>
+
+<body>
+  <section class="body__section">
+
+
+    <section class="calories__calc">
+      <section class="header__container">
+        <section class="header__wrapper">
+          <div class="header__logo">
+            <h2>Good to know - <span class="title__color">Calories Calculator</span></h2>
+          </div>
+
+          <div class="header__navList">
+            <div class="add__product">
+              <ul class="header__navUl">
+                <li class="header__element">
+                  <a href="#" class="main__page">Main Page</a>
+                </li>
+                <li class="header__element">
+                  <i class="fas fa-plus"></i>
+                  <a href="./product.html" class="add__product">Add Product</a>
+                </li>
+                <li class="header__element">
+                  <a href="#" class="product__list">Product List</a>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="nutrition__bigwrapper">
+      <section class="nutrition__container">
+        <div class="nutrition-wrapper">
+          <ul class="nutrition__list">
+            <li class="nutrition__item">Name</li>
+            <li class="nutrition__item">Calories</li>
+            <li class="nutrition__item">Fat</li>
+            <li class="nutrition__item">Carbs</li>
+            <li class="nutrition__item">Protein</li>
+            <li class="nutrition__item">Sugar</li>
+          </ul>
+        </div>
+      </section>
+
+    </section>
+    <section class="main__container">
+      <section class="main__wrapper">
+
+        <div class="main__elements">
+          <div class="breakfast__wrapper">
+            <p class="breakfast__title">Breakfast</p>
+            <div class="breakfast__div">
+              <div class="breakfast__firstItem">
+                <select name="food" id="food-select" class="select_inpt">
+                  <option value="">Choose Food Type</option>
+                  <option value="eggs">Eggs</option>
+                  <option value="musli">Musli</option>
+                </select>
+                <input id="grams" type="number" placeholder="Grams" class="grams__input">
+                <button class="btn-breakfast btn" type="submit">Add Product</button>
+              </div>
+              <div class="breakfast__secondItem">
+                <p class="breakfast__name">Tofu</p>
+                <p class="breakfast__name b_cal">46</p>
+                <p class="breakfast__name b_fat">2.27g</p>
+                <p class="breakfast__name b_carbs">2.44</p>
+                <p class="breakfast__name b_protein">4.03</p>
+                <p class="breakfast__name b_sugar">2g</p>
+              </div>
+
+            </div>
+
+            <div class="remove__btn">
+              <i class="bi bi-x-circle bfs__bts breakfast__btn"></i>
+            </div>
+          </div>
+
+          <div class="secondbreakfast__wrapper">
+            <p class="secondbreakfast__title">Second Breakfast</p>
+            <div class="secondbreakfast__div">
+              <div class="secondbreakfast__onetItem">
+                <select name="food" id="food-select">
+                  <option value="">Choose Food Type</option>
+                  <option value="eggs">Eggs</option>
+                  <option value="musli">Musli</option>
+                </select>
+                <input id="grams" type="number" placeholder="Grams" class="grams__input">
+                <button class="btn-secondbreakfast btn" type="submit">Add Product</button>
+              </div>
+              <div class="secondbreakfast__secondItem">
+                <p class="secondbreakfast__name">Tofu</p>
+                <p class="secondbreakfast__name b_cal">46</p>
+                <p class="secondbreakfast__name b_fat">2.27g</p>
+                <p class="secondbreakfast__name b_carbs">2.44</p>
+                <p class="secondbreakfast__name b_protein">4.03</p>
+                <p class="secondbreakfast__name b_sugar">2g</p>
+              </div>
+            </div>
+            <div class="remove__btn">
+              <i class="bi bi-x-circle secondbreakfast__btn"></i>
+            </div>
+          </div>
+          <div class="lunch__wrapper">
+            <p class="lunch__title">Lunch</p>
+            <div class="lunch__div">
+              <div class="lunch__firstItem">
+                <select name="food" id="food-select">
+                  <option value="">Choose Food Type</option>
+                  <option value="eggs">Eggs</option>
+                  <option value="musli">Musli</option>
+                </select>
+                <input id="grams" type="number" placeholder="Grams" class="grams__input">
+                <button class="btn" type="submit">Add Product</button>
+              </div>
+              <div class="lunch__secondItem">
+                <p class="lunch__name">Tofu</p>
+                <p class="lunch__name l_cal">46</p>
+                <p class="lunch__name l_fat">2.27g</p>
+                <p class="lunch__name l_carbs">2.44</p>
+                <p class="lunch__name l_protein">4.03</p>
+                <p class="lunch__name l_sugar">2g</p>
+              </div>
+            </div>
+           
+
+            <div class="remove__btn">
+              <i class="bi bi-x-circle lunch__btn"></i>
+            </div>
+          </div>
+          <div class="dinner__wprapper">
+            <p class="dinner__title">Dinner</p>
+            <div class="dinner__div">
+              <div class="dinner__firstItem">
+                <select name="food" id="food-select">
+                  <option value="">Choose Food Type</option>
+                  <option value="eggs">Eggs</option>
+                  <option value="musli">Musli</option>
+                </select>
+                <input id="grams" type="number" placeholder="Grams" class="grams__input">
+                <button class="btn" type="submit">Add Product</button>
+              </div>
+              <div class="dinner__secondItem">
+                <p class="dinner__name">Tofu</p>
+                <p class="dinner__name d_cal">46</p>
+                <p class="dinner__name d_fat">2.27g</p>
+                <p class="dinner__name d_carbs">2.44</p>
+                <p class="dinner__name d_protein">4.03</p>
+                <p class="dinner__name d_sugar">2g</p>
+              </div>
+            </div>
+           
+            <div class="remove__btn">
+              <i class="bi bi-x-circle dinner__btn"></i>
+            </div>
+          </div>
+        </div>
+        <section class="summary">
+          <div class="summar_item">
+            <p class="summary__text">Total:</p>
+          </div>
+        </section>
+      </section>
+    </section>
+  </section>
+  <main id="app" class="container"></main>
+  <script src="build/out.js"></script>
+</body>
+
+</html>

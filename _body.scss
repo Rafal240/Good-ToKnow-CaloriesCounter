@@ -1,0 +1,22 @@
+body {
+  background-color: $backgrounColor;
+  background-image: $background-image;
+  font-family: $font-family;
+  font-size: $font-size;
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+
+  .body__section {
+    width: 1352px;
+    margin: 0 auto;
+  }
+  .grams__input {
+    width: 70px;
+    border: none;
+    border-radius: 10px;
+    
+  }
+}

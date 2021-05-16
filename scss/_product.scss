@@ -1,0 +1,41 @@
+.add__contrainer {
+  width: 1352px;
+  margin: 0 auto;
+
+  .add__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 70px;
+    border: 2px solid red;
+    border-radius: 20px;
+  }
+
+  input[type="text"] {
+    border: none;
+    border-bottom: 3px solid red;
+    background-color: transparent;
+    outline: none;
+    color: red;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+  input[type="text"]:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid red;
+    text-transform: uppercase;
+   
+  }
+  .btn-product {
+      background-color: red;
+      border: none;
+      padding: 15px 65px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      color:white;
+  }
+}

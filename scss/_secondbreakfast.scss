@@ -1,0 +1,36 @@
+.secondbreakfast__wrapper {
+  position: relative;
+  .secondbreakfast__title {
+    margin-left: 10px;
+    padding: 2px 5px;
+  }
+
+  .secondbreakfast__div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .secondbreakfast__onetItem {
+    margin: 5px 5px;
+    padding: 5px 8px;
+  }
+  .secondbreakfast__secondItem {
+    display: flex;
+
+    .secondbreakfast__name {
+      margin: -5px 20px;
+      padding: 5px 11px;
+    }
+  }
+}
+.secondbreakfast__btn {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1rem;
+  color: red;
+  cursor: pointer;
+
+  position: absolute;
+  right: 20px;
+  top: 40px;
+
+}
