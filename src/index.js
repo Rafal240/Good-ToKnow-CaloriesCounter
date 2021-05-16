@@ -4,6 +4,9 @@ import Header from "./Components/Header";
 import Nutrition from "./Components/Nutrition";
 import Breakfast from "./Components/Breakfast";
 import SecondBreakfast from "./Components/SecondBreakfast";
+import Lunch from "./Components/Lunch";
+import Dinner from "./Components/Dinner";
+import SummarySection from "./Components/SummarySection";
 
 const Main = () => {
   return (
@@ -20,6 +23,11 @@ const Main = () => {
         <Section className="main__wrapper">
           <Breakfast />
           <SecondBreakfast />
+          <Lunch />
+          <Dinner />
+          <Section className="summary">
+            <SummarySection />
+          </Section>
         </Section>
       </Section>
     </Section>
