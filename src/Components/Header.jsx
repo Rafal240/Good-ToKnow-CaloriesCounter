@@ -23,7 +23,7 @@ const Header = () => {
               </ListItem>
               <ListItem className="header__element">
                 <Link
-                  href="./product.html"
+                  href="src\Components\ProductWeb.jsx"
                   className="add__product"
                   label="Add Product"
                 />
