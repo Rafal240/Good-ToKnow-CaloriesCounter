@@ -2,7 +2,7 @@ const path = require("path");
 const entryPath = ".";
 
 module.exports = {
-  entry: `./${entryPath}/app.js`,
+  entry: `./${entryPath}/App.js`,
   output: {
     filename: "out.js",
     path: path.resolve(__dirname, `${entryPath}/build`)
@@ -17,7 +17,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: "babel-loader"
       },
@@ -26,5 +26,9 @@ module.exports = {
         use: ["style-loader", "css-loader","sass-loader"]
       },
     ]
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
   }
+
 };
