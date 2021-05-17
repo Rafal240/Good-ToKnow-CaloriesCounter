@@ -4,10 +4,28 @@ import Section from "./Section";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
-import RemoveButton from "./RemoveButton";
 import Div from "./Div";
+import ExistingItems from "./MainContainer/ExistingItems";
 
 const Breakfast = () => {
+  const items = [
+    {
+      name: "Tofu",
+      cal: 46,
+      fat: "2.27g",
+      carb: "2.44",
+      protein: "4.03",
+      sugar: "2g",
+    },
+    {
+      name: "Ryba",
+      cal: 26,
+      fat: "1.27g",
+      carb: "1.44",
+      protein: "2.03",
+      sugar: "1.5g",
+    },
+  ];
   return (
     <Section className="main__container">
       <Section className="main__wrapper">
@@ -24,16 +42,8 @@ const Breakfast = () => {
                 <Input></Input>
                 <Button></Button>
               </Div>
-              <Div className="breakfast__secondItem">
-                <Paragraf className="breakfast__name">Tofu</Paragraf>
-                <Paragraf className="breakfast__name b_cal">46</Paragraf>
-                <Paragraf className="breakfast__name b_fat">2.27g</Paragraf>
-                <Paragraf className="breakfast__name b_carbs">2.44</Paragraf>
-                <Paragraf className="breakfast__name b_protein">4.03</Paragraf>
-                <Paragraf className="breakfast__name b_sugar">2g</Paragraf>
-              </Div>
+              <ExistingItems items={items} />
             </Div>
-            <RemoveButton />
           </Div>
         </Div>
       </Section>

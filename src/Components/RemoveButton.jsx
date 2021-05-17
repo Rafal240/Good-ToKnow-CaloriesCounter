@@ -1,8 +1,8 @@
 import React from "react";
 
-const RemoveButton = () => {
+const RemoveButton = ({ onClick }) => {
   return (
-    <button>
+    <button onClick={onClick}>
       <i className="bi bi-x-circle bfs__bts breakfast__btn"></i>
     </button>
   );
