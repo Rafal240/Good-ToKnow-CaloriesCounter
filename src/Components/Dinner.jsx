@@ -5,16 +5,17 @@ import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
 import RemoveButton from "./RemoveButton";
+import Div from "./Div";
 
 const Dinner = () => {
   return (
     <Section className="main__container">
       <Section className="main__wrapper">
-        <div className="main__elements">
-          <div className="dinner__wprapper">
+        <Div className="main__elements">
+          <Div className="dinner__wprapper">
             <Paragraf className="dinner__title">Dinner</Paragraf>
-            <div className="dinner__div">
-              <div className="dinner__firstItem">
+            <Div className="dinner__div">
+              <Div className="dinner__firstItem">
                 <Select className="select_inpt">
                   <option value="">Choose Food Type</option>
                   <option value="eggs">Eggs</option>
@@ -22,19 +23,19 @@ const Dinner = () => {
                 </Select>
                 <Input></Input>
                 <Button></Button>
-              </div>
-              <div className="dinner__secondItem">
+              </Div>
+              <Div className="dinner__secondItem">
                 <Paragraf className="dinner__name">Tofu</Paragraf>
                 <Paragraf className="dinner__name d_cal">46</Paragraf>
                 <Paragraf className="dinner__name d_fat">2.27g</Paragraf>
                 <Paragraf className="dinner__name d_carbs">2.44</Paragraf>
                 <Paragraf className="dinner__name d_protein">4.03</Paragraf>
                 <Paragraf className="dinner__name d_sugar">2g</Paragraf>
-              </div>
-            </div>
+              </Div>
+            </Div>
             <RemoveButton />
-          </div>
-        </div>
+          </Div>
+        </Div>
       </Section>
     </Section>
   );

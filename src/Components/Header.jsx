@@ -3,20 +3,21 @@ import Section from "./Section";
 import List from "./List";
 import ListItem from "./ListItem";
 import Link from "./Link";
+import Div from "./Div";
 
 const Header = () => {
   return (
     <Section className="header__container">
       <Section className="header__wrapper">
-        <div className="header__logo">
+        <Div className="header__logo">
           <h2>
             Good to know -
             <span className="title__color">Calories Calculator</span>
           </h2>
-        </div>
+        </Div>
 
-        <div className="header__navList">
-          <div className="add__product">
+        <Div className="header__navList">
+          <Div className="add__product">
             <List className="header__navUl">
               <ListItem className="header__element">
                 <Link href="#" className="main__page" label="Main Page" />
@@ -32,8 +33,8 @@ const Header = () => {
                 <Link href="#" className="product__list" label="Product List" />
               </ListItem>
             </List>
-          </div>
-        </div>
+          </Div>
+        </Div>
       </Section>
     </Section>
   );

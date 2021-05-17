@@ -1,15 +1,16 @@
 import React from "react";
 import Paragraf from "./Paragraf";
 import Section from "./Section";
+import Div from "./Div";
 
 const Summary = () => {
   return (
     <Section className="main__container">
       <Section className="main__wrapper">
         <Section className="summary">
-          <div className="summar_item">
+          <Div className="summar_item">
             <Paragraf className="summary__text">Total:</Paragraf>
-          </div>
+          </Div>
         </Section>
       </Section>
     </Section>
