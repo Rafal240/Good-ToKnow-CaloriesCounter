@@ -25,6 +25,14 @@ const Breakfast = () => {
       protein: "2.03",
       sugar: "1.5g",
     },
+    {
+      name: "Jajka",
+      cal: 16,
+      fat: "1.17g",
+      carb: "1.14",
+      protein: "1.03",
+      sugar: "1.0g",
+    },
   ];
   return (
     <Section className="main__container">

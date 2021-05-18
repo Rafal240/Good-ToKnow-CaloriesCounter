@@ -14,7 +14,7 @@ const ExistingItems = ({ items }) => {
           <Paragraf className="breakfast__name">{item.name}</Paragraf>
           <Paragraf className="breakfast__name b_cal">{item.cal}</Paragraf>
           <Paragraf className="breakfast__name b_fat">{item.fat}</Paragraf>
-          <Paragraf className="breakfast__name b_carbs">{item.carbs}</Paragraf>
+          <Paragraf className="breakfast__name b_carbs">{item.carb}</Paragraf>
           <Paragraf className="breakfast__name b_protein">
             {item.protein}
           </Paragraf>

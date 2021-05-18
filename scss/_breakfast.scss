@@ -15,22 +15,36 @@
   }
   .breakfast__secondItem {
     display: flex;
+    flex-direction: column;
 
     .breakfast__name {
       margin: -5px 20px;
       padding: 5px 11px;
     }
   }
- 
+  .Kuna {
+    display: flex;
+    position: relative;
+    .kuna__button {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1rem;
+      color: red;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: -7px;
+    }
+  }
 }
 
-.breakfast__btn {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 1rem;
-  color: red;
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 40px;
-}
+// .breakfast__btn {
+//   display: flex;
+//   justify-content: flex-end;
+//   font-size: 1rem;
+//   color: red;
+//   cursor: pointer;
+//   position: absolute;
+//   right: 20px;
+//   top: 40px;
+// }
