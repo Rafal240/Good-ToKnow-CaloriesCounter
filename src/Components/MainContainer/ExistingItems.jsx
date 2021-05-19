@@ -10,7 +10,7 @@ const ExistingItems = ({ items }) => {
   const renderItems = () => {
     return items.map((item) => {
       return (
-        <Div className="Kuna" key={item.name}>
+        <Div className="breakfast__productsMap" key={item.name}>
           <Paragraf className="breakfast__name">{item.name}</Paragraf>
           <Paragraf className="breakfast__name b_cal">{item.cal}</Paragraf>
           <Paragraf className="breakfast__name b_fat">{item.fat}</Paragraf>

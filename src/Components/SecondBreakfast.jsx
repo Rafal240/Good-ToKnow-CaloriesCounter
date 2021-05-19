@@ -6,8 +6,27 @@ import Input from "./Input";
 import Button from "./Button";
 import RemoveButton from "./RemoveButton";
 import Div from "./Div";
+import SecondBexistingItems from "./MainContainer/SecondBexistingItems";
 
 const SecondBreakfast = () => {
+  const items = [
+    {
+      name: "Tosty",
+      cal: 12,
+      fat: "1g",
+      carb: "1.15g",
+      protein: "2.02",
+      sugar: "0.5g",
+    },
+    {
+      name: "Jogurt",
+      cal: 5,
+      fat: "1g",
+      carb: "1.05g",
+      protein: "1.22",
+      sugar: "4.5g",
+    },
+  ];
   return (
     <Section className="main__container">
       <Section className="main__wrapper">
@@ -27,22 +46,7 @@ const SecondBreakfast = () => {
                 <Input></Input>
                 <Button></Button>
               </Div>
-              <Div className="secondbreakfast__secondItem">
-                <Paragraf className="secondbreakfast__name">Tofu</Paragraf>
-                <Paragraf className="secondbreakfast__name b_cal">46</Paragraf>
-                <Paragraf className="secondbreakfast__name b_fat">
-                  2.27g
-                </Paragraf>
-                <Paragraf className="secondbreakfast__name b_carbs">
-                  2.44
-                </Paragraf>
-                <Paragraf className="secondbreakfast__name b_protein">
-                  4.03
-                </Paragraf>
-                <Paragraf className="secondbreakfast__name b_sugar">
-                  2g
-                </Paragraf>
-              </Div>
+              <SecondBexistingItems items={items} />
             </Div>
             <RemoveButton />
           </Div>
