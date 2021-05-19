@@ -32,7 +32,7 @@ const Dinner = () => {
       <Section className="main__wrapper">
         <Div className="main__elements">
           <Div className="dinner__wprapper">
-            <Paragraf className="dinner__title">Dinner</Paragraf>
+            <Paragraf className="dinner__title" text="Dinner"></Paragraf>
             <Div className="dinner__div">
               <Div className="dinner__firstItem">
                 <Select className="select_inpt">

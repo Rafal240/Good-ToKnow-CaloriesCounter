@@ -11,22 +11,30 @@ const SecondBexistingItems = ({ items }) => {
     return items.map((item) => {
       return (
         <Div className="secondbreakfast__productsMap" key={item.name}>
-          <Paragraf className="secondbreakfast__name">{item.name}</Paragraf>
-          <Paragraf className="secondbreakfast__name b_cal">
-            {item.cal}
-          </Paragraf>
-          <Paragraf className="secondbreakfast__name b_fat">
-            {item.fat}
-          </Paragraf>
-          <Paragraf className="secondbreakfast__name b_carbs">
-            {item.carb}
-          </Paragraf>
-          <Paragraf className="secondbreakfast__name b_protein">
-            {item.protein}
-          </Paragraf>
-          <Paragraf className="secondbreakfast__name b_sugar">
-            {item.sugar}
-          </Paragraf>
+          <Paragraf
+            className="secondbreakfast__name"
+            text={item.name}
+          ></Paragraf>
+          <Paragraf
+            className="secondbreakfast__name b_cal"
+            text={item.cal}
+          ></Paragraf>
+          <Paragraf
+            className="secondbreakfast__name b_fat"
+            text={item.fat}
+          ></Paragraf>
+          <Paragraf
+            className="secondbreakfast__name b_carbs"
+            text={item.carb}
+          ></Paragraf>
+          <Paragraf
+            className="secondbreakfast__name b_protein"
+            text={item.protein}
+          ></Paragraf>
+          <Paragraf
+            className="secondbreakfast__name b_sugar"
+            text={item.sugar}
+          ></Paragraf>
           <RemoveButton onClick={onClickRemoveButton} />
         </Div>
       );

@@ -15,23 +15,26 @@ const ProductWeb = () => {
 
         <Div className="add__form">
           <Div className="food__name">
-            <Paragraf className="form__text">Enter product name:</Paragraf>
+            <Paragraf
+              className="form__text"
+              text="Enter product name:"
+            ></Paragraf>
             <InputText />
           </Div>
           <Div className="food__calories">
-            <Paragraf className="form__text">Product Calories</Paragraf>
+            <Paragraf className="form__text" text="Product Calories"></Paragraf>
             <InputText />
           </Div>
           <Div className="food__fat">
-            <Paragraf className="form__text">Fat</Paragraf>
+            <Paragraf className="form__text" text="Fat"></Paragraf>
             <InputText />
           </Div>
           <Div className="food__proteins">
-            <Paragraf className="form__text">Proteins</Paragraf>
+            <Paragraf className="form__text" text="Proteins"></Paragraf>
             <InputText />
           </Div>
           <Div className="food__sugar">
-            <Paragraf className="form__text">Sugar</Paragraf>
+            <Paragraf className="form__text" text="Sugar"></Paragraf>
             <InputText />
           </Div>
           <ButtonProduct />

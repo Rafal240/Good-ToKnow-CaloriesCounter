@@ -11,12 +11,21 @@ const DinnerExistingItems = ({ items }) => {
     return items.map((item) => {
       return (
         <Div className="dinner__productsMap" key={item.name}>
-          <Paragraf className="dinner__name">{item.name}</Paragraf>
-          <Paragraf className="dinner__name d_cal">{item.cal}</Paragraf>
-          <Paragraf className="dinner__name d_fat">{item.fat}</Paragraf>
-          <Paragraf className="dinner__name d_carbs">{item.carb}</Paragraf>
-          <Paragraf className="dinner__name d_protein">{item.protein}</Paragraf>
-          <Paragraf className="dinner__name d_sugar">{item.sugar}</Paragraf>
+          <Paragraf className="dinner__name" text={item.name}></Paragraf>
+          <Paragraf className="dinner__name d_cal" text={item.cal}></Paragraf>
+          <Paragraf className="dinner__name d_fat" text={item.fat}></Paragraf>
+          <Paragraf
+            className="dinner__name d_carbs"
+            text={item.carb}
+          ></Paragraf>
+          <Paragraf
+            className="dinner__name d_protein"
+            text={item.protein}
+          ></Paragraf>
+          <Paragraf
+            className="dinner__name d_sugar"
+            text={item.sugar}
+          ></Paragraf>
           <RemoveButton onClick={onClickRemoveButton} />
         </Div>
       );

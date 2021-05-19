@@ -31,7 +31,7 @@ const Breakfast = () => {
       <Section className="main__wrapper">
         <Div className="main__elements">
           <Div className="breakfast__wrapper">
-            <Paragraf className="breakfast__title">Breakfast</Paragraf>
+            <Paragraf className="breakfast__title" text="Breakfast"></Paragraf>
             <Div className="breakfast__div">
               <Div className="breakfast__firstItem">
                 <Select className="select_inpt">

@@ -32,10 +32,10 @@ const SecondBreakfast = () => {
       <Section className="main__wrapper">
         <Div className="main__elements">
           <Div className="secondbreakfast__wrapper">
-            <Paragraf className="secondbreakfast__title">
-              {" "}
-              Second Breakfast
-            </Paragraf>
+            <Paragraf
+              className="secondbreakfast__title"
+              text="Second Breakfast"
+            ></Paragraf>
             <Div className="secondbreakfast__div">
               <Div className="secondbreakfast__onetItem">
                 <Select className="select_inpt">
