@@ -48,7 +48,6 @@ const SecondBreakfast = () => {
               </Div>
               <SecondBexistingItems items={items} />
             </Div>
-            <RemoveButton />
           </Div>
         </Div>
       </Section>

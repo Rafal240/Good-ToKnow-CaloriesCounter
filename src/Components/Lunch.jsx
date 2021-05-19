@@ -4,7 +4,6 @@ import Section from "./Section";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
-import RemoveButton from "./RemoveButton";
 import Div from "./Div";
 import LunchExistingItems from "./MainContainer/LunchExistingItems";
 
@@ -45,7 +44,6 @@ const Lunch = () => {
               </Div>
               <LunchExistingItems items={items} />
             </Div>
-            <RemoveButton />
           </Div>
         </Div>
       </Section>

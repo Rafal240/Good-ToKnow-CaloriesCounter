@@ -4,10 +4,29 @@ import Section from "./Section";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
-import RemoveButton from "./RemoveButton";
+
 import Div from "./Div";
+import DinnerExistingItems from "./MainContainer/DinnerExistingItems";
 
 const Dinner = () => {
+  const items = [
+    {
+      name: "Chicken",
+      cal: 90,
+      fat: "1g",
+      carb: "12g",
+      protein: "5",
+      sugar: "1g",
+    },
+    {
+      name: "Broccoli",
+      cal: 10,
+      fat: "0g",
+      carb: "3.05g",
+      protein: "2.2",
+      sugar: "1.5g",
+    },
+  ];
   return (
     <Section className="main__container">
       <Section className="main__wrapper">
@@ -24,16 +43,8 @@ const Dinner = () => {
                 <Input></Input>
                 <Button></Button>
               </Div>
-              <Div className="dinner__secondItem">
-                <Paragraf className="dinner__name">Tofu</Paragraf>
-                <Paragraf className="dinner__name d_cal">46</Paragraf>
-                <Paragraf className="dinner__name d_fat">2.27g</Paragraf>
-                <Paragraf className="dinner__name d_carbs">2.44</Paragraf>
-                <Paragraf className="dinner__name d_protein">4.03</Paragraf>
-                <Paragraf className="dinner__name d_sugar">2g</Paragraf>
-              </Div>
+              <DinnerExistingItems items={items} />
             </Div>
-            <RemoveButton />
           </Div>
         </Div>
       </Section>

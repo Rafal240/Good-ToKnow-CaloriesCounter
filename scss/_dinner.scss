@@ -15,21 +15,36 @@
   }
   .dinner__secondItem {
     display: flex;
+    flex-direction: column;
 
     .dinner__name {
       margin: -5px 20px;
       padding: 5px 11px;
     }
   }
+  .dinner__productsMap {
+    display: flex;
+    position: relative;
+    .bproducts__button {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1rem;
+      color: red;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: -7px;
+    }
+  }
 }
 
-.dinner__btn{
-  display: flex;
-  justify-content: flex-end;
-  font-size: 1rem;
-  color: red;
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 40px;
-}
+// .dinner__btn {
+//   display: flex;
+//   justify-content: flex-end;
+//   font-size: 1rem;
+//   color: red;
+//   cursor: pointer;
+//   position: absolute;
+//   right: 20px;
+//   top: 40px;
+// }
