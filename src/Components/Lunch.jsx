@@ -6,8 +6,27 @@ import Input from "./Input";
 import Button from "./Button";
 import RemoveButton from "./RemoveButton";
 import Div from "./Div";
+import LunchExistingItems from "./MainContainer/LunchExistingItems";
 
 const Lunch = () => {
+  const items = [
+    {
+      name: "Soup",
+      cal: 122,
+      fat: "12g",
+      carb: "3.15g",
+      protein: "5.02",
+      sugar: "5.5g",
+    },
+    {
+      name: "Sandwich",
+      cal: 100,
+      fat: "15g",
+      carb: "7.05g",
+      protein: "4.22",
+      sugar: "10.5g",
+    },
+  ];
   return (
     <Section className="main__container">
       <Section className="main__wrapper">
@@ -24,14 +43,7 @@ const Lunch = () => {
                 <Input></Input>
                 <Button></Button>
               </Div>
-              <Div className="lunch__secondItem">
-                <Paragraf className="lunch__name">Tofu</Paragraf>
-                <Paragraf className="lunch__name l_cal">46</Paragraf>
-                <Paragraf className="lunch__name l_fat">2.27g</Paragraf>
-                <Paragraf className="lunch__name l_carbs">2.44</Paragraf>
-                <Paragraf className="lunch__name l_protein">4.03</Paragraf>
-                <Paragraf className="lunch__name l_sugar">2g</Paragraf>
-              </Div>
+              <LunchExistingItems items={items} />
             </Div>
             <RemoveButton />
           </Div>
