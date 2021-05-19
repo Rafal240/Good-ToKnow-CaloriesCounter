@@ -18,7 +18,7 @@ const Breakfast = () => {
       sugar: "2g",
     },
     {
-      name: "Ryba",
+      name: "Fish",
       cal: 26,
       fat: "1.27g",
       carb: "1.44",

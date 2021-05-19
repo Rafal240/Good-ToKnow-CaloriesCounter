@@ -11,7 +11,7 @@ import SecondBexistingItems from "./MainContainer/SecondBexistingItems";
 const SecondBreakfast = () => {
   const items = [
     {
-      name: "Tosty",
+      name: "Toast",
       cal: 12,
       fat: "1g",
       carb: "1.15g",
@@ -19,7 +19,7 @@ const SecondBreakfast = () => {
       sugar: "0.5g",
     },
     {
-      name: "Jogurt",
+      name: "Joghurt",
       cal: 5,
       fat: "1g",
       carb: "1.05g",
