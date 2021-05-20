@@ -1,0 +1,34 @@
+{
+    "meals": [
+        {
+            "id": "1",
+            "name": "Tofu",
+            "cal": 46,
+            "fat": "2.27g",
+            "carb": "2.44",
+            "protein": "4.03",
+            "sugar": "2g",
+            "type": "breakfast"
+          },
+          {
+            "id": "2",
+            "name": "Tofu lucnh",
+            "cal": 46,
+            "fat": "2.27g",
+            "carb": "2.44",
+            "protein": "4.03",
+            "sugar": "2g",
+            "type": "lunch"
+          },
+          {
+            "id": "3",
+            "name": "Tofu dinner",
+            "cal": 46,
+            "fat": "2.27g",
+            "carb": "2.44",
+            "protein": "4.03",
+            "sugar": "2g",
+            "type": "dinner"
+          }
+    ]
+}

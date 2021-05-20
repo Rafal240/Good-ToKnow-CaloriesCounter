@@ -8,6 +8,7 @@ import Div from "./Div";
 import ExistingItems from "./MainContainer/ExistingItems";
 
 const Breakfast = () => {
+  // fetch(meals//)
   const items = [
     {
       name: "Tofu",
@@ -26,19 +27,25 @@ const Breakfast = () => {
       sugar: "1.5g",
     },
   ];
+
+  const selectValues = [
+    { value: "", text: "Choose Food Type" },
+    { value: "eggs", text: "Eggs" },
+    { value: "musli", text: "Muslim" },
+  ];
   return (
     <Section className="main__container">
       <Section className="main__wrapper">
         <Div className="main__elements">
           <Div className="breakfast__wrapper">
-            <Paragraf className="breakfast__title" text="Breakfast"></Paragraf>
+            <Paragraf className="breakfast__title" text="Breakfast" />
             <Div className="breakfast__div">
               <Div className="breakfast__firstItem">
-                <Select className="select_inpt">
-                  <option value="">Choose Food Type</option>
-                  <option value="eggs">Eggs</option>
-                  <option value="musli">Musli</option>
-                </Select>
+                <Select
+                  className="select_inpt"
+                  options={selectValues}
+                  onChange={(e) => console.log("SELECTED VALUE:", e)}
+                />
                 <Input></Input>
                 <Button></Button>
               </Div>
