@@ -1,5 +1,5 @@
 {
-    "meals": [
+    "breakfast": [
         {
             "id": "1",
             "name": "Tofu",
@@ -12,23 +12,88 @@
           },
           {
             "id": "2",
-            "name": "Tofu lucnh",
+            "name": "Egg",
             "cal": 46,
             "fat": "2.27g",
             "carb": "2.44",
             "protein": "4.03",
             "sugar": "2g",
-            "type": "lunch"
+            "type": "breakfast"
           },
           {
             "id": "3",
-            "name": "Tofu dinner",
+            "name": "Scramble Egg",
             "cal": 46,
             "fat": "2.27g",
             "carb": "2.44",
             "protein": "4.03",
             "sugar": "2g",
-            "type": "dinner"
+            "type": "breakfast"
           }
+    ],
+    "lunch":[
+      {
+        "id": "1",
+        "name": "Spaghetti",
+        "cal": 46,
+        "fat": "2.27g",
+        "carb": "2.44",
+        "protein": "4.03",
+        "sugar": "2g",
+        "type": "lunch"
+      },
+      {
+        "id": "2",
+        "name": "Chicken with Mushrooms",
+        "cal": 46,
+        "fat": "2.27g",
+        "carb": "2.44",
+        "protein": "4.03",
+        "sugar": "2g",
+        "type": "lunch"
+      },
+      {
+        "id": "2",
+        "name": "Tomato Soup",
+        "cal": 46,
+        "fat": "2.27g",
+        "carb": "2.44",
+        "protein": "4.03",
+        "sugar": "2g",
+        "type": "lunch"
+      }
+    ],
+    "dinner":[
+      {
+        "id": "1",
+        "name": "Ham and Chesse Toast",
+        "cal": 46,
+        "fat": "2.27g",
+        "carb": "2.44",
+        "protein": "4.03",
+        "sugar": "2g",
+        "type": "lunch"
+      },
+      {
+        "id": "2",
+        "name": "Bagel",
+        "cal": 46,
+        "fat": "2.27g",
+        "carb": "2.44",
+        "protein": "4.03",
+        "sugar": "2g",
+        "type": "lunch"
+      },
+      {
+        "id": "2",
+        "name": "Wholegrain Pasta",
+        "cal": 46,
+        "fat": "2.27g",
+        "carb": "2.44",
+        "protein": "4.03",
+        "sugar": "2g",
+        "type": "lunch"
+      }
     ]
+
 }

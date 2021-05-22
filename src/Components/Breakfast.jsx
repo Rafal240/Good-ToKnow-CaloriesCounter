@@ -31,7 +31,7 @@ const Breakfast = () => {
   const selectValues = [
     { value: "", text: "Choose Food Type" },
     { value: "eggs", text: "Eggs" },
-    { value: "musli", text: "Muslim" },
+    { value: "musli", text: "Musli" },
   ];
   return (
     <Section className="main__container">
