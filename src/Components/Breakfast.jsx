@@ -27,7 +27,7 @@ const Breakfast = () => {
       sugar: "1.5g",
     },
   ];
-
+  //tutaj fetch use effect Mapa w fetchu //select values stan w komponencie
   const selectValues = [
     { value: "", text: "Choose Food Type" },
     { value: "eggs", text: "Eggs" },
