@@ -9,6 +9,8 @@ import Div from "./Div";
 import ExistingItems from "./MainContainer/ExistingItems";
 
 const Breakfast = () => {
+  const [data, setData] = useState([]);
+
   // fetch(meals//)
   const items = [
     {
@@ -41,12 +43,16 @@ const Breakfast = () => {
         return response.json();
       })
       .then(function (myJson) {
+        // Tutaj dzieje się ustawianie danych - teraz możesz używać `data`
+        setData(myJson);
         console.log(myJson);
       });
   };
+
   useEffect(() => {
     getData();
   }, []);
+
   const selectValues = [
     { value: "", text: "Choose Food Type" },
     { value: "eggs", text: "Eggs" },
