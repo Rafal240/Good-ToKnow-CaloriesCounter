@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Paragraf from "./Paragraf";
 import Section from "./Section";
 import Select from "./Select";
@@ -28,6 +28,24 @@ const Breakfast = () => {
     },
   ];
   //tutaj fetch use effect Mapa w fetchu //select values stan w komponencie
+  const getData = () => {
+    fetch("http://localhost:3000/breakfast", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then(function (response) {
+        console.log(response);
+        return response.json();
+      })
+      .then(function (myJson) {
+        console.log(myJson);
+      });
+  };
+  useEffect(() => {
+    getData();
+  }, []);
   const selectValues = [
     { value: "", text: "Choose Food Type" },
     { value: "eggs", text: "Eggs" },
