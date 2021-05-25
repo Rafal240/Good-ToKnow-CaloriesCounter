@@ -23,6 +23,7 @@ const Header = () => {
                 <Link href="#" className="main__page" label="Main Page" />
               </ListItem>
               <ListItem className="header__element">
+                {/* Ten link nie zadziała poprawnie - jeśli chcesz dodać inne podstronki, będziesz musiał... Użyć React Router ;) */}
                 <Link
                   href="src\Components\ProductWeb.jsx"
                   className="add__product"

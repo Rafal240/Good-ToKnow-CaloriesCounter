@@ -1,9 +1,10 @@
-import React from "react";
-import Section from "./Section";
-import Paragraf from "./Paragraf";
-import InputText from "./InputText";
-import Div from "./Div";
-import ButtonProduct from "./ButtonProduct";
+import React from 'react';
+
+import Section from './Section';
+import Paragraf from './Paragraf';
+import InputText from './InputText';
+import Div from './Div';
+import ButtonProduct from './ButtonProduct';
 
 const ProductWeb = () => {
   return (
@@ -18,26 +19,26 @@ const ProductWeb = () => {
             <Paragraf
               className="form__text"
               text="Enter product name:"
-            ></Paragraf>
-            <InputText />
+            />
+            <InputText/>
           </Div>
           <Div className="food__calories">
-            <Paragraf className="form__text" text="Product Calories"></Paragraf>
-            <InputText />
+            <Paragraf className="form__text" text="Product Calories"/>
+            <InputText/>
           </Div>
           <Div className="food__fat">
-            <Paragraf className="form__text" text="Fat"></Paragraf>
-            <InputText />
+            <Paragraf className="form__text" text="Fat"/>
+            <InputText/>
           </Div>
           <Div className="food__proteins">
-            <Paragraf className="form__text" text="Proteins"></Paragraf>
-            <InputText />
+            <Paragraf className="form__text" text="Proteins"/>
+            <InputText/>
           </Div>
           <Div className="food__sugar">
-            <Paragraf className="form__text" text="Sugar"></Paragraf>
-            <InputText />
+            <Paragraf className="form__text" text="Sugar"/>
+            <InputText/>
           </Div>
-          <ButtonProduct />
+          <ButtonProduct/>
         </Div>
       </Div>
     </Section>

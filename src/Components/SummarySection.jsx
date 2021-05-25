@@ -4,6 +4,7 @@ import Section from "./Section";
 import Div from "./Div";
 
 const Summary = () => {
+  // Trochę dużo zagnieżdżeń - nie da się tego uprościć?
   return (
     <Section className="main__container">
       <Section className="main__wrapper">

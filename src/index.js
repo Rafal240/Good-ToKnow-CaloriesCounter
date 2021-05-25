@@ -1,7 +1,8 @@
 import React from "react";
+
 import Section from "./Components/Section";
 import Header from "./Components/Header";
-import Nutrition from "./Components/Nutrition";
+import Nutrition from "./Components/Nutrition/Nutrition";
 import Breakfast from "./Components/Breakfast";
 import SecondBreakfast from "./Components/SecondBreakfast";
 import Lunch from "./Components/Lunch";
@@ -33,4 +34,5 @@ const Main = () => {
     </Section>
   );
 };
+
 export default Main;
