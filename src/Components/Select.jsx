@@ -4,7 +4,11 @@ const Select = ({ className, options = [] }) => {
   return (
     <select className={className}>
       {options.map((option) => {
-        return <option value={option.value}>{option.text}</option>;
+        return (
+          <option value={option.value} key={option.id}>
+            {option.text}
+          </option>
+        );
       })}
     </select>
   );

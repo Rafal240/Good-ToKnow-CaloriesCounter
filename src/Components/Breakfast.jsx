@@ -29,18 +29,13 @@ const Breakfast = () => {
   ];
   //tutaj fetch use effect Mapa w fetchu //select values stan w komponencie
   const getData = () => {
-    fetch("http://localhost:3000/breakfast", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        console.log(response);
-        return response.json();
+    fetch("http://localhost:3000/breakfast")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
       })
-      .then(function (myJson) {
-        console.log(myJson);
+      .catch((error) => {
+        console.log(error);
       });
   };
   useEffect(() => {
