@@ -8,6 +8,7 @@ import Div from "./Div";
 import ExistingItems from "./MainContainer/ExistingItems";
 
 const Breakfast = () => {
+  const [data, setData] = useState([{}]);
   // fetch(meals//)
   const items = [
     {
@@ -28,24 +29,25 @@ const Breakfast = () => {
     },
   ];
   //tutaj fetch use effect Mapa w fetchu //select values stan w komponencie
-  const getData = () => {
-    fetch("http://localhost:3000/breakfast")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+
   useEffect(() => {
+    const getData = () => {
+      fetch("http://localhost:3000/breakfast")
+        .then((response) => response.json())
+        .then((data) => {
+          setData(data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    };
     getData();
   }, []);
-  const selectValues = [
-    { value: "", text: "Choose Food Type" },
-    { value: "eggs", text: "Eggs" },
-    { value: "musli", text: "Musli" },
-  ];
+  // const selectValues = [
+  //   { value: "", text: "Choose Food Type" },
+  //   { value: "eggs", text: "Eggs" },
+  //   { value: "musli", text: "Musli" },
+  // ];
   return (
     <Section className="main__container">
       <Section className="main__wrapper">
@@ -54,11 +56,15 @@ const Breakfast = () => {
             <Paragraf className="breakfast__title" text="Breakfast" />
             <Div className="breakfast__div">
               <Div className="breakfast__firstItem">
-                <Select
-                  className="select_inpt"
-                  options={selectValues}
-                  onChange={(e) => console.log("SELECTED VALUE:", e)}
-                />
+                <select>
+                  {data.map((item) => {
+                    return (
+                      <option key={item.id} value={item.name}>
+                        {item.name}
+                      </option>
+                    );
+                  })}
+                </select>
                 <Input></Input>
                 <Button></Button>
               </Div>
