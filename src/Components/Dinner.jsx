@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Paragraf from "./Paragraf";
 import Section from "./Section";
 import Select from "./Select";
@@ -9,6 +9,7 @@ import Div from "./Div";
 import DinnerExistingItems from "./MainContainer/DinnerExistingItems";
 
 const Dinner = () => {
+  const [data, setData] = useState([{}]);
   const items = [
     {
       name: "Chicken",
@@ -27,6 +28,19 @@ const Dinner = () => {
       sugar: "1.5g",
     },
   ];
+  useEffect(() => {
+    const getData = () => {
+      fetch("http://localhost:3000/dinner")
+        .then((response) => response.json())
+        .then((data) => {
+          setData(data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    };
+    getData();
+  }, []);
   return (
     <Section className="main__container">
       <Section className="main__wrapper">
@@ -35,11 +49,16 @@ const Dinner = () => {
             <Paragraf className="dinner__title" text="Dinner"></Paragraf>
             <Div className="dinner__div">
               <Div className="dinner__firstItem">
-                <Select className="select_inpt">
-                  <option value="">Choose Food Type</option>
-                  <option value="eggs">Eggs</option>
-                  <option value="musli">Musli</option>
-                </Select>
+                <select>
+                  <option>Choose items</option>
+                  {data.map((item) => {
+                    return (
+                      <option key={item.id} value={item.name}>
+                        {item.name}
+                      </option>
+                    );
+                  })}
+                </select>
                 <Input></Input>
                 <Button></Button>
               </Div>

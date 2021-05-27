@@ -9,7 +9,6 @@ import ExistingItems from "./MainContainer/ExistingItems";
 
 const Breakfast = () => {
   const [data, setData] = useState([{}]);
-  // fetch(meals//)
   const items = [
     {
       name: "Tofu",
@@ -57,6 +56,7 @@ const Breakfast = () => {
             <Div className="breakfast__div">
               <Div className="breakfast__firstItem">
                 <select>
+                  <option>Choose items</option>
                   {data.map((item) => {
                     return (
                       <option key={item.id} value={item.name}>

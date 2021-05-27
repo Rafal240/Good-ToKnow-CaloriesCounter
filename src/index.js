@@ -22,7 +22,7 @@ const Main = () => {
       <Section className="main__container">
         <Section className="main__wrapper">
           <Breakfast />
-          <SecondBreakfast />
+          {/* <SecondBreakfast /> */}
           <Lunch />
           <Dinner />
           <Section className="summary">
