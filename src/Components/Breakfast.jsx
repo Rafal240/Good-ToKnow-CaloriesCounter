@@ -9,6 +9,7 @@ import ExistingItems from "./MainContainer/ExistingItems";
 
 const Breakfast = () => {
   const [data, setData] = useState([{}]);
+
   const items = [
     {
       name: "Tofu",
@@ -42,11 +43,17 @@ const Breakfast = () => {
     };
     getData();
   }, []);
-  // const selectValues = [
+
+  // const handleOnChange = (event) => {
+  //   const { name, id } = event.target;
+  //   setInputValues({ [name]: id });
+  // };
+  // // const selectValues = [
   //   { value: "", text: "Choose Food Type" },
   //   { value: "eggs", text: "Eggs" },
   //   { value: "musli", text: "Musli" },
   // ];
+
   return (
     <Section className="main__container">
       <Section className="main__wrapper">
