@@ -1,104 +1,7 @@
 {
-  "breakfast": [
-    {
-      "id": "1",
-      "name": "Tofu",
-      "cal": 46,
-      "fat": "2.27g",
-      "carb": "2.44",
-      "protein": "4.03",
-      "sugar": "2g",
-      "type": "breakfast"
-    },
-    {
-      "id": "2",
-      "name": "Egg",
-      "cal": 46,
-      "fat": "2.27g",
-      "carb": "2.44",
-      "protein": "4.03",
-      "sugar": "2g",
-      "type": "breakfast"
-    },
-    {
-      "id": "3",
-      "name": "Scramble Egg",
-      "cal": 46,
-      "fat": "2.27g",
-      "carb": "2.44",
-      "protein": "4.03",
-      "sugar": "2g",
-      "type": "breakfast"
-    },
-    {
-      "id": 100,
-      "name": "banan"
-    }
-  ],
-  "lunch": [
-    {
-      "id": "1",
-      "name": "Spaghetti",
-      "cal": 46,
-      "fat": "2.27g",
-      "carb": "2.44",
-      "protein": "4.03",
-      "sugar": "2g",
-      "type": "lunch"
-    },
-    {
-      "id": "2",
-      "name": "Chicken with Mushrooms",
-      "cal": 46,
-      "fat": "2.27g",
-      "carb": "2.44",
-      "protein": "4.03",
-      "sugar": "2g",
-      "type": "lunch"
-    },
-    {
-      "id": "3",
-      "name": "Tomato Soup",
-      "cal": 46,
-      "fat": "2.27g",
-      "carb": "2.44",
-      "protein": "4.03",
-      "sugar": "2g",
-      "type": "lunch"
-    }
-  ],
-  "dinner": [
-    {
-      "id": "1",
-      "name": "Ham and Chesse Toast",
-      "cal": 46,
-      "fat": "2.27g",
-      "carb": "2.44",
-      "protein": "4.03",
-      "sugar": "2g",
-      "type": "lunch"
-    },
-    {
-      "id": "2",
-      "name": "Bagel",
-      "cal": 46,
-      "fat": "2.27g",
-      "carb": "2.44",
-      "protein": "4.03",
-      "sugar": "2g",
-      "type": "lunch"
-    },
-    {
-      "id": "3",
-      "name": "Wholegrain Pasta",
-      "cal": 46,
-      "fat": "2.27g",
-      "carb": "2.44",
-      "protein": "4.03",
-      "sugar": "2g",
-      "type": "lunch"
-    }
-  ],
+  "breakfast": [],
+  "lunch": [],
+  "dinner": [],
   "all_products": [
     {
       "id": "1",
@@ -110,24 +13,181 @@
       "sugar": "2g"
     },
     {
-      "id": "3",
+      "id": "2",
       "name": "Scramble Egg",
       "cal": 46,
       "fat": "2.27g",
       "carb": "2.44",
       "protein": "4.03",
-      "sugar": "2g",
-      "type": "breakfast"
+      "sugar": "2g"
     },
     {
-      "id": "rWB-fzN",
-      "name": "chleb",
-      "calories": "chleb"
+      "id": "3",
+      "name": "Egg",
+      "cal": 46,
+      "fat": "2.27g",
+      "carb": "2.44",
+      "protein": "4.03",
+      "sugar": "2g"
     },
     {
-      "id": "Woda",
+      "id": "4",
+      "name": "Spaghetti",
+      "cal": 46,
+      "fat": "2.27g",
+      "carb": "2.44",
+      "protein": "4.03",
+      "sugar": "2g"
+    },
+    {
+      "id": "5",
+      "name": "Chicken with Mushrooms",
+      "cal": 46,
+      "fat": "2.27g",
+      "carb": "2.44",
+      "protein": "4.03",
+      "sugar": "2g"
+    },
+    {
+      "id": "6",
+      "name": "Tomato Soup",
+      "cal": 46,
+      "fat": "2.27g",
+      "carb": "2.44",
+      "protein": "4.03",
+      "sugar": "2g"
+    },
+    {
+      "id": "7",
+      "name": "Beef Steak",
+      "cal": 386,
+      "fat": "22g",
+      "carb": "0g",
+      "protein": "41g",
+      "sugar": "0g"
+    },
+    {
+      "id": "8",
+      "name": "Bagel",
+      "cal": 46,
+      "fat": "2.27g",
+      "carb": "2.44",
+      "protein": "4.03",
+      "sugar": "2g"
+    },
+
+    {
+      "id": "9",
+      "name": "Wholegrain Pasta",
+      "cal": 46,
+      "fat": "2.27g",
+      "carb": "2.44",
+      "protein": "4.03",
+      "sugar": "2g"
+    },
+    {
+      "id": "10",
       "name": "Woda",
       "cal": "0"
+    },
+    {
+      "id": "11",
+      "name": "Chicken Breast",
+      "cal": 11,
+      "fat": "0.25g",
+      "carb": "0g",
+      "protein": "23g",
+      "sugar": "0g"
+    },
+    {
+      "id": "12",
+      "name": "Pastrami",
+      "cal": 41,
+      "fat": "1.63",
+      "carb": "0g",
+      "protein": "6.10",
+      "sugar": "0.94"
+    },
+    {
+      "id": "13",
+      "name": "Cesar Salad",
+      "cal": 196,
+      "fat": "6.47",
+      "carb": "11.41",
+      "protein": "28.53",
+      "sugar": "11g"
+    },
+    {
+      "id": "14",
+      "name": "Greek Salad",
+      "cal": 27,
+      "fat": "1.82",
+      "carb": "0.85",
+      "protein": "1.75",
+      "sugar": "1.98g"
+    },
+    {
+      "id": "15",
+      "name": "Toasted Bagel",
+      "cal": 285,
+      "fat": "1.70g",
+      "carb": "56g",
+      "protein": "11g",
+      "sugar": "5.3g"
+    },
+    {
+      "id": "16",
+      "name": "Chicken Soup",
+      "cal": 37,
+      "fat": "1.23g",
+      "carb": "4.68",
+      "protein": "4.03",
+      "sugar": ".27g"
+    },
+    {
+      "id": "17",
+      "name": "Brown Rice",
+      "cal": 233,
+      "fat": "1.89",
+      "carb": "44.28",
+      "protein": "5.03",
+      "sugar": "0g"
+    },
+    {
+      "id": "18",
+      "name": "Lager Beer",
+      "cal": 153,
+      "fat": "0g",
+      "carb": "12.54",
+      "protein": "1.03",
+      "sugar": "0g"
+    },
+    {
+      "id": "19",
+      "name": "Brownie",
+      "cal": 129,
+      "fat": "4.68g",
+      "carb": "21.26",
+      "protein": "1.62",
+      "sugar": "12.5g"
+    },
+    {
+      "id": "20",
+      "name": "Donut",
+      "cal": 299,
+      "fat": "10.76",
+      "carb": "23.36",
+      "protein": "3.55",
+      "sugar": "2g"
+    },
+    {
+      "id": "21",
+      "name": "Avocado",
+      "cal": 80,
+      "fat": "7g",
+      "carb": "4.29g",
+      "protein": "1.00g",
+      "sugar": "2g"
     }
   ]
 }
