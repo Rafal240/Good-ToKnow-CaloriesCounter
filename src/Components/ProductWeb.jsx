@@ -8,8 +8,16 @@ import ButtonProduct from "./ButtonProduct";
 const ProductWeb = () => {
   const [name, setName] = useState("");
   const [calories, setCalories] = useState("");
+  const [fat, setFat] = useState("");
+  const [carb, setCarb] = useState("");
+  const [protein, setProtein] = useState("");
+  const [sugar, setSugar] = useState("");
   const onNameChangeHandler = (event) => setName(event.target.value);
   const onCaloriesChangeHandler = (event) => setCalories(event.target.value);
+  const onFatChangeHandler = (event) => setFat(event.target.value);
+  const onCarbChangeHandler = (event) => setCarb(event.target.value);
+  const onSugarChangeHandler = (event) => setSugar(event.target.value);
+  const onProteinChangeHandler = (event) => setProtein(event.target.value);
 
   const onAddProductHandler = () => {
     fetch("http://localhost:3000/all_products", {
@@ -17,7 +25,15 @@ const ProductWeb = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ id: name, name: name, cal: calories }),
+      body: JSON.stringify({
+        id: name,
+        name: name,
+        cal: calories,
+        fat: fat,
+        carb: carb,
+        protein: protein,
+        sugar: sugar,
+      }),
     });
   };
 
@@ -39,15 +55,19 @@ const ProductWeb = () => {
           </Div>
           <Div className="food__fat">
             <Paragraf className="form__text" text="Fat"></Paragraf>
-            <InputText />
+            <InputText value={fat} onChange-={onFatChangeHandler} />
+          </Div>
+          <Div className="food__carbs">
+            <Paragraf className="form__text" text="Carbs"></Paragraf>
+            <InputText value={carb} onChange-={onCarbChangeHandler} />
           </Div>
           <Div className="food__proteins">
             <Paragraf className="form__text" text="Proteins"></Paragraf>
-            <InputText />
+            <InputText value={protein} onChange={onProteinChangeHandler} />
           </Div>
           <Div className="food__sugar">
             <Paragraf className="form__text" text="Sugar"></Paragraf>
-            <InputText />
+            <InputText value={sugar} onChange={onSugarChangeHandler} />
           </Div>
           <ButtonProduct onClick={onAddProductHandler} />
         </Div>
