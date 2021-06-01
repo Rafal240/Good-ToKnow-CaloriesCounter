@@ -9,7 +9,7 @@ import Div from "./Div";
 import DinnerExistingItems from "./MainContainer/DinnerExistingItems";
 
 const Dinner = () => {
-  const [data, setData] = useState([{}]);
+  const [data, setData] = useState([]);
   const items = [
     {
       name: "Chicken",

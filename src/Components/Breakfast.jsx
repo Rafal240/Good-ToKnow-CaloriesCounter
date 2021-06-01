@@ -8,7 +8,7 @@ import Div from "./Div";
 import ExistingItems from "./MainContainer/ExistingItems";
 
 const Breakfast = () => {
-  const [data, setData] = useState([{}]);
+  const [data, setData] = useState([]);
 
   const items = [
     {
@@ -32,7 +32,7 @@ const Breakfast = () => {
 
   useEffect(() => {
     const getData = () => {
-      fetch("http://localhost:3000/breakfast")
+      fetch("http://localhost:3000/all_products")
         .then((response) => response.json())
         .then((data) => {
           setData(data);

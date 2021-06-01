@@ -8,7 +8,7 @@ import Div from "./Div";
 import LunchExistingItems from "./MainContainer/LunchExistingItems";
 
 const Lunch = () => {
-  const [data, setData] = useState([{}]);
+  const [data, setData] = useState([]);
   const items = [
     {
       name: "Soup",
