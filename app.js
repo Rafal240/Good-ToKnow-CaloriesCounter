@@ -7,7 +7,7 @@ import Product from "./src/product.js";
 const App = () => {
   return (
     <>
-      <Main />,
+      <Main />
       <Product />
     </>
   );

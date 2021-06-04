@@ -4,6 +4,7 @@ import Paragraf from "./Paragraf";
 import InputText from "./InputText";
 import Div from "./Div";
 import ButtonProduct from "./ButtonProduct";
+import Link from "./Link";
 
 const ProductWeb = () => {
   const [name, setName] = useState("");

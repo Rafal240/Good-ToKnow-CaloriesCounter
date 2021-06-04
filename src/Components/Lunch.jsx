@@ -30,7 +30,7 @@ const Lunch = () => {
 
   useEffect(() => {
     const getData = () => {
-      fetch("http://localhost:3000/lunch")
+      fetch("http://localhost:3000/all_products")
         .then((response) => response.json())
         .then((data) => {
           setData(data);
