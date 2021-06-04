@@ -1,5 +1,30 @@
 {
-  "breakfast": [],
+  "breakfast": [
+    {
+      "name": "Scramble Egg",
+      "id": 1
+    },
+    {
+      "name": "Spaghetti",
+      "id": 2
+    },
+    {
+      "name": "Wholegrain Pasta",
+      "id": 3
+    },
+    {
+      "name": "Donut",
+      "id": 4
+    },
+    {
+      "name": "Brownie",
+      "id": 5
+    },
+    {
+      "name": "Chicken Soup",
+      "id": 6
+    }
+  ],
   "lunch": [],
   "dinner": [],
   "all_products": [
@@ -75,7 +100,6 @@
       "protein": "4.03",
       "sugar": "2g"
     },
-
     {
       "id": "9",
       "name": "Wholegrain Pasta",

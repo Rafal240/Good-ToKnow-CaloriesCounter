@@ -60,11 +60,11 @@ const ProductWeb = () => {
             </Div>
             <Div className="food__fat">
               <Paragraf className="form__text" text="Fat"></Paragraf>
-              <InputText value={fat} onChange-={onFatChangeHandler} />
+              <InputText value={fat} onChange={onFatChangeHandler} />
             </Div>
             <Div className="food__carbs">
               <Paragraf className="form__text" text="Carbs"></Paragraf>
-              <InputText value={carb} onChange-={onCarbChangeHandler} />
+              <InputText value={carb} onChange={onCarbChangeHandler} />
             </Div>
             <Div className="food__proteins">
               <Paragraf className="form__text" text="Proteins"></Paragraf>
