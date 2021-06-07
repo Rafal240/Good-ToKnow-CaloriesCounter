@@ -1,0 +1,11 @@
+.savedList__container {
+  width: 1352px;
+  margin: 0 auto;
+  .savedList__mainHeader {
+    text-align: center;
+  }
+  .savedList__items {
+    display: flex;
+    justify-content: space-between;
+  }
+}
