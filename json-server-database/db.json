@@ -1,7 +1,34 @@
 {
-  "breakfast": [],
-  "lunch": [],
-  "dinner": [],
+  "breakfast": [
+    {
+      "name": "Chicken with Mushrooms",
+      "id": 1
+    },
+    {
+      "name": "Egg",
+      "id": 2
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Toasted Bagel",
+      "id": 1
+    },
+    {
+      "name": "Spaghetti",
+      "id": 2
+    }
+  ],
+  "dinner": [
+    {
+      "name": "Lager Beer",
+      "id": 1
+    },
+    {
+      "name": "Chicken Breast",
+      "id": 2
+    }
+  ],
   "all_products": [
     {
       "id": "1",
