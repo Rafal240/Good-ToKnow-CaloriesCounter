@@ -17,24 +17,39 @@ const ProductListWeb = () => {
             <Div className="savedList__items">
               <Div className="sv__name">
                 <Paragraf className="savedList__name" text="Name"></Paragraf>
+                <Paragraf
+                  className="savedList__name"
+                  text="Ryż z jajkiem"
+                ></Paragraf>
+                <Paragraf className="savedList__name" text="Tofu"></Paragraf>
               </Div>
               <Div className="sv__name">
                 <Paragraf className="savedList__cal" text="Calories"></Paragraf>
+                <Paragraf className="savedList__cal" text="14g"></Paragraf>
+                <Paragraf className="savedList__cal" text="20g"></Paragraf>
               </Div>
               <Div className="sv__name">
                 <Paragraf className="savedList__fat" text="Fat"></Paragraf>
+                <Paragraf className="savedList__fat" text="5g"></Paragraf>
+                <Paragraf className="savedList__fat" text="2g"></Paragraf>
               </Div>
               <Div className="sv__name">
                 <Paragraf className="savedList__carb" text="Carb"></Paragraf>
+                <Paragraf className="savedList__carb" text="1.2g"></Paragraf>
+                <Paragraf className="savedList__carb" text="5g"></Paragraf>
               </Div>
               <Div className="sv__name">
                 <Paragraf
                   className="savedList__protein"
                   text="Protein"
                 ></Paragraf>
+                <Paragraf className="savedList__protein" text="4.5g"></Paragraf>
+                <Paragraf className="savedList__protein" text="5g"></Paragraf>
               </Div>
               <Div className="sv__name">
                 <Paragraf className="savedList__sugar" text="Sugar"></Paragraf>
+                <Paragraf className="savedList__sugar" text="1g"></Paragraf>
+                <Paragraf className="savedList__sugar" text="13g"></Paragraf>
               </Div>
             </Div>
           </Div>

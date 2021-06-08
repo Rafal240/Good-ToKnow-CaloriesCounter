@@ -25,6 +25,7 @@
   .lunch__productsMap {
     display: flex;
     position: relative;
+    align-self: flex-end;
     .bproducts__button {
       display: flex;
       justify-content: flex-end;
