@@ -9,7 +9,7 @@ const Summary = () => {
       <Section className="main__wrapper">
         <Section className="summary">
           <Div className="summar_item">
-            <Paragraf className="summary__text">Total:</Paragraf>
+            <Paragraf className="summary__text" text="Total"></Paragraf>
           </Div>
         </Section>
       </Section>

@@ -7,6 +7,7 @@ import Button from "./Button";
 
 import Div from "./Div";
 import DinnerExistingItems from "./MainContainer/DinnerExistingItems";
+import Summary from "./SummarySection";
 
 const Dinner = () => {
   const [data, setData] = useState([]);
