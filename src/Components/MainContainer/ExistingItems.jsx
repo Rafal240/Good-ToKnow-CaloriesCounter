@@ -3,10 +3,7 @@ import Div from "../Div";
 import Paragraf from "../Paragraf";
 import RemoveButton from "../RemoveButton";
 
-const ExistingItems = ({ items }) => {
-  const onClickRemoveButton = () => {
-    console.log("Wywalić produkt");
-  };
+const ExistingItems = ({ items, onClickRemoveButton }) => {
   const renderItems = () => {
     return items.map((item) => {
       return (
@@ -32,7 +29,7 @@ const ExistingItems = ({ items }) => {
             className="breakfast__name b_sugar"
             text={item.sugar}
           ></Paragraf>
-          <RemoveButton onClick={onClickRemoveButton} />
+          <RemoveButton onClick={() => onClickRemoveButton(item.id)} />
         </Div>
       );
     });

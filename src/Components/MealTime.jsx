@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Paragraf from "./Paragraf";
 import Section from "./Section";
-import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
-
 import Div from "./Div";
-import DinnerExistingItems from "./MainContainer/DinnerExistingItems";
-import Summary from "./SummarySection";
+import ExistingItems from "./MainContainer/ExistingItems";
 
-const Dinner = () => {
+const MealTime = ({ type }) => {
   const [data, setData] = useState([]);
   const [grams, setGrams] = useState("");
   const [select, setSelect] = useState("");
@@ -19,7 +16,7 @@ const Dinner = () => {
   };
   const [items, setItems] = useState([]);
   const AddItemButton = () => {
-    fetch("http://localhost:3000/dinner", {
+    fetch(`http://localhost:3000/${type}`, {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
@@ -39,19 +36,21 @@ const Dinner = () => {
       },
     });
   };
+
+  //tutaj fetch use effect Mapa w fetchu //select values stan w komponencie
   const getData = () => {
     fetch("http://localhost:3000/all_products")
       .then((response) => response.json())
       .then((all_products) => {
         setData(all_products);
-        return fetch("http://localhost:3000/dinner")
+        return fetch(`http://localhost:3000/${type}`)
           .then((response) => response.json())
-          .then((breakfastItem) => {
-            const items = breakfastItem.map((eachBreakfastItem) => {
+          .then((mealItem) => {
+            const items = mealItem.map((eachMealItem) => {
               const productDetails = all_products.find(
-                (product) => product.name === eachBreakfastItem.name
+                (product) => product.name === eachMealItem.name
               );
-              return productDetails;
+              return { ...productDetails, id: eachMealItem.id };
             });
             setItems(items);
           })
@@ -67,45 +66,27 @@ const Dinner = () => {
   useEffect(() => {
     getData();
   }, []);
-  // const items = [
-  //   {
-  //     name: "Chicken",
-  //     cal: 90,
-  //     fat: "1g",
-  //     carb: "12g",
-  //     protein: "5",
-  //     sugar: "1g",
-  //   },
-  //   {
-  //     name: "Broccoli",
-  //     cal: 10,
-  //     fat: "0g",
-  //     carb: "3.05g",
-  //     protein: "2.2",
-  //     sugar: "1.5g",
-  //   },
-  // ];
-  // useEffect(() => {
-  //   const getData = () => {
-  //     fetch("http://localhost:3000/all_products")
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         setData(data);
-  //       })
-  //       .catch((error) => {
-  //         console.log(error);
-  //       });
-  //   };
-  //   getData();
-  // }, []);
+
+  const onClickRemoveButton = (itemId) => {
+    console.log("Wywalić produkt", itemId);
+    fetch(`http://localhost:3000/${type}/${itemId}`, {
+      method: "DELETE", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then(() => {
+      getData();
+    });
+  };
+
   return (
     <Section className="main__container">
       <Section className="main__wrapper">
         <Div className="main__elements">
-          <Div className="dinner__wprapper">
-            <Paragraf className="dinner__title" text="Dinner"></Paragraf>
-            <Div className="dinner__div">
-              <Div className="dinner__firstItem">
+          <Div className="breakfast__wrapper">
+            <Paragraf className="breakfast__title" text={type} />
+            <Div className="breakfast__div">
+              <Div className="breakfast__firstItem">
                 <select onChange={handleSelectChange} value={select}>
                   <option>Choose items</option>
                   {data.map((item) => {
@@ -119,7 +100,10 @@ const Dinner = () => {
                 <Input value={grams} onChange={onChangeGrams}></Input>
                 <Button onClick={AddItemButton}></Button>
               </Div>
-              <DinnerExistingItems items={items} />
+              <ExistingItems
+                items={items}
+                onClickRemoveButton={onClickRemoveButton}
+              />
             </Div>
           </Div>
         </Div>
@@ -127,4 +111,4 @@ const Dinner = () => {
     </Section>
   );
 };
-export default Dinner;
+export default MealTime;

@@ -2,10 +2,9 @@ import React from "react";
 import Section from "./Components/Section";
 import Header from "./Components/Header";
 import Nutrition from "./Components/Nutrition";
-import Breakfast from "./Components/Breakfast";
-import SecondBreakfast from "./Components/SecondBreakfast";
-import Lunch from "./Components/Lunch";
-import Dinner from "./Components/Dinner";
+
+import MealTime from "./Components/MealTime";
+
 import SummarySection from "./Components/SummarySection";
 
 const Main = () => {
@@ -21,10 +20,10 @@ const Main = () => {
       </Section>
       <Section className="main__container">
         <Section className="main__wrapper">
-          <Breakfast />
-          {/* <SecondBreakfast /> */}
-          <Lunch />
-          <Dinner />
+          <MealTime type="breakfast" />
+          <MealTime type="lunch" />
+          <MealTime type="dinner" />
+
           <Section className="summary">
             <SummarySection />
           </Section>

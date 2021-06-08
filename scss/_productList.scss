@@ -4,8 +4,13 @@
   .savedList__mainHeader {
     text-align: center;
   }
-  .savedList__items {
+  .osavedList__items {
     display: flex;
     justify-content: space-between;
+  }
+
+  .savedList__item {
+    display: flex;
+    justify-content: space-around;
   }
 }

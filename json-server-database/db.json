@@ -1,26 +1,30 @@
 {
   "breakfast": [
     {
-      "name": "Chicken with Mushrooms",
-      "id": 1
-    },
-    {
       "name": "Egg",
       "id": 2
     },
     {
+      "name": "",
+      "id": 3
+    },
+    {
       "name": "Brown Rice",
-      "id": 4
+      "id": 5
+    },
+    {
+      "name": "",
+      "id": 6
     }
   ],
   "lunch": [
     {
-      "name": "Toasted Bagel",
-      "id": 1
-    },
-    {
       "name": "Spaghetti",
       "id": 2
+    },
+    {
+      "name": "Wholegrain Pasta",
+      "id": 3
     }
   ],
   "dinner": [
@@ -29,11 +33,13 @@
       "id": 1
     },
     {
-      "name": "Chicken Breast",
-      "id": 2
+      "name": "Greek Salad",
+      "id": 3
     }
   ],
-  "saved_products": [{}],
+  "saved_products": [
+    {}
+  ],
   "all_products": [
     {
       "id": "1",
