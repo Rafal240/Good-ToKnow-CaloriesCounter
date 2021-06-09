@@ -4,13 +4,16 @@
   .savedList__mainHeader {
     text-align: center;
   }
-  .osavedList__items {
+
+  .savedList__item {
     display: flex;
     justify-content: space-between;
   }
 
-  .savedList__item {
+  .savedList__item_map {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 3px solid red;
   }
 }

@@ -1,45 +1,35 @@
 {
   "breakfast": [
     {
+      "name": "Tofu",
+      "id": 1
+    },
+    {
       "name": "Egg",
       "id": 2
-    },
-    {
-      "name": "",
-      "id": 3
-    },
-    {
-      "name": "Brown Rice",
-      "id": 5
-    },
-    {
-      "name": "",
-      "id": 6
     }
   ],
   "lunch": [
     {
-      "name": "Spaghetti",
-      "id": 2
+      "name": "Scramble Egg",
+      "id": 1
     },
     {
-      "name": "Wholegrain Pasta",
-      "id": 3
+      "name": "Spaghetti",
+      "id": 2
     }
   ],
   "dinner": [
     {
-      "name": "Lager Beer",
+      "name": "Spaghetti",
       "id": 1
     },
     {
-      "name": "Greek Salad",
+      "name": "Pastrami",
       "id": 3
     }
   ],
-  "saved_products": [
-    {}
-  ],
+
   "all_products": [
     {
       "id": "1",
@@ -125,7 +115,11 @@
     {
       "id": "10",
       "name": "Woda",
-      "cal": "0"
+      "cal": "0",
+      "fat": "0",
+      "carb": "0",
+      "protein": "0",
+      "sugar": "0g"
     },
     {
       "id": "11",
@@ -133,7 +127,7 @@
       "cal": 11,
       "fat": "0.25g",
       "carb": "0g",
-      "protein": "23g",
+      "protein": "0",
       "sugar": "0g"
     },
     {
