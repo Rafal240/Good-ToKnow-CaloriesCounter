@@ -42,14 +42,22 @@ const MealTime = ({ type }) => {
     fetch("http://localhost:3000/all_products")
       .then((response) => response.json())
       .then((all_products) => {
+        // sciagamy wszystkie produkty
         setData(all_products);
         return fetch(`http://localhost:3000/${type}`)
           .then((response) => response.json())
           .then((mealItem) => {
+            /**
+             * petla przez wszystkie produtky
+             * i w srodku petli, kolejna petla ( .find) zeby znalezc wszystke detale do danego produktu
+             * zeby moc wyslwietlic na stronie
+             */
             const items = mealItem.map((eachMealItem) => {
+              debugger;
               const productDetails = all_products.find(
                 (product) => product.name === eachMealItem.name
               );
+              debugger;
               return { ...productDetails, id: eachMealItem.id };
             });
             setItems(items);
@@ -63,6 +71,7 @@ const MealTime = ({ type }) => {
         console.log(error);
       });
   };
+
   useEffect(() => {
     getData();
   }, []);
