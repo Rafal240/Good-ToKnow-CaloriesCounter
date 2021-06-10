@@ -13,7 +13,20 @@
   .savedList__item_map {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     border-bottom: 3px solid red;
   }
+}
+.sv__titles {
+  width: 17%;
+  margin: 0;
+}
+.map__id_item,
+.map__name_item,
+.map___cal_item,
+.map__fat_item,
+.map__protein_item,
+.map__sugar_item {
+  width: 20%;
+  margin: 10px;
 }

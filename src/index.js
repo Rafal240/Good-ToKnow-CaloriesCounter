@@ -1,35 +1,33 @@
 import React from "react";
 import Section from "./Components/Section";
 import Header from "./Components/Header";
-import Nutrition from "./Components/Nutrition";
 
-import MealTime from "./Components/MealTime";
-
-import SummarySection from "./Components/SummarySection";
+import Home from "./home";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import Product from "./product";
+import ProductList from "./productList";
 
 const Main = () => {
   return (
-    <Section className="body__section">
-      <Section className="calories__calc">
-        <Header />
-      </Section>
-      <Section className="nutrition__bigwrapper">
-        <Section className="nutrition__container">
-          <Nutrition />
+    <Router>
+      <Section className="body__section">
+        <Section className="calories__calc">
+          <Header />
         </Section>
-      </Section>
-      <Section className="main__container">
-        <Section className="main__wrapper">
-          <MealTime type="breakfast" />
-          <MealTime type="lunch" />
-          <MealTime type="dinner" />
 
-          <Section className="summary">
-            <SummarySection />
-          </Section>
-        </Section>
+        <Switch>
+          <Route path="/add-product">
+            <Product />
+          </Route>
+          <Route path="/product-list">
+            <ProductList />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </Section>
-    </Section>
+    </Router>
   );
 };
 export default Main;

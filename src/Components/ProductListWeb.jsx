@@ -55,7 +55,7 @@ const ProductListWeb = () => {
                 {data.map((eachProduct) => {
                   return (
                     <Div key={eachProduct.id} className="savedList__item_map">
-                      <Div className="map__id_tem">
+                      <Div className="map__id_item">
                         <Paragraf
                           className="savedList_id"
                           text={eachProduct.id}

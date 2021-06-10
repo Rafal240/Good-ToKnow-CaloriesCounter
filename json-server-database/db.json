@@ -1,35 +1,22 @@
 {
   "breakfast": [
     {
-      "name": "Tofu",
+      "name": "Scramble Egg",
       "id": 1
-    },
-    {
-      "name": "Egg",
-      "id": 2
     }
   ],
   "lunch": [
     {
-      "name": "Scramble Egg",
+      "name": "Chicken with Mushrooms",
       "id": 1
-    },
-    {
-      "name": "Spaghetti",
-      "id": 2
     }
   ],
   "dinner": [
     {
-      "name": "Spaghetti",
+      "name": "Brown Rice",
       "id": 1
-    },
-    {
-      "name": "Pastrami",
-      "id": 3
     }
   ],
-
   "all_products": [
     {
       "id": "1",
